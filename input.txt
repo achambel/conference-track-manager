@@ -1,26 +1,19 @@
-Talk about ruby A 26min
-Talk about ruby B 15min
-Talk about ruby C lightning
-Talk about ruby D 24min
-Talk about ruby E 7min
-Talk about ruby F 14min
-Talk about ruby G 38min
-Talk about ruby H 26min
-Talk about ruby I 46min
-Talk about ruby J 11min
-Talk about ruby K 44min
-Talk about ruby L 27min
-Talk about ruby M 17min
-Talk about ruby N 34min
-Talk about ruby O 11min
-Talk about ruby P 57min
-Talk about ruby Q 21min
-Talk about ruby R 26min
-Talk about ruby S 18min
-Talk about ruby T 42min
-Talk about ruby U 24min
-Talk about ruby V 51min
-Talk about ruby W 20min
-Talk about ruby X 9min
-Talk about ruby Y 25min
-Talk about ruby Z 26min
+Writing Fast Tests Against Enterprise Rails 60min
+Overdoing it in Python 45min
+Lua for the Masses 30min
+Ruby Errors from Mismatched Gem Versions 45min
+Common Ruby Errors 45min
+Rails for Python Developers lightning
+Communicating Over Distance 60min
+Accounting-Driven Development 45min
+Woah 30min
+Sit Down and Write 30min
+Pair Programming vs Noise 45min
+Rails Magic 60min
+Ruby on Rails: Why We Should Move On 60min
+Clojure Ate Scala (on my project) 45min
+Programming in the Boondocks of Seattle 30min
+Ruby vs. Clojure for Back-End Development 30min
+Ruby on Rails Legacy App Maintenance 60min
+A World Without HackerNews 30min
+User Interface CSS in Rails Apps 30min
