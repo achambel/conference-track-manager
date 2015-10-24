@@ -9,7 +9,11 @@ module ConferenceTrackManager
         total_talks_duration = 0
         talks.each do |talk|
           total_talks_duration += talk.duration
-          talks_session << talk if total_talks_duration <= session
+          if total_talks_duration <= session
+            talks_session << talk
+          else
+            total_talks_duration -= talk.duration
+          end
 
         end
 
