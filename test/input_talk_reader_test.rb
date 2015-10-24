@@ -13,7 +13,7 @@ class InputTalkReaderTest < Minitest::Test
     talk6 = ConferenceTrackManager::Model::Talk.new('Rails for Python Developers', 5)
     @talks_spec = [talk1, talk2, talk3, talk4, talk5, talk6]
 
-    @talks_retrieve = ConferenceTrackManager::Input::InputTalkReader.new.read('../input.txt')
+    @talks_retrieve = ConferenceTrackManager::Input::InputTalkReader.new.read('input.txt')
     @talks_retrieve = @talks_retrieve[0..5] if @talks_retrieve
     assert_equal(@talks_spec, @talks_retrieve)
 
