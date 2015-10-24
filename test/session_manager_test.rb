@@ -4,7 +4,7 @@ require_relative '../lib/conference-track-manager/talk'
 
 class SessionManagerTest < Minitest::Test
 
-  def test_fill_a_session
+  def test_fill_a_session_with_max_of_talks_possible
       session = 180
       talk1 = ConferenceTrackManager::Model::Talk.new('Writing Fast Tests Against Enterprise Rails', 30)
       talk2 = ConferenceTrackManager::Model::Talk.new('Overdoing it in Python', 40)
@@ -22,7 +22,6 @@ class SessionManagerTest < Minitest::Test
 
       total_duaration_session_talks = 0
       session_talks.each do |talk|
-          puts talk.duration
           total_duaration_session_talks += talk.duration
       end
 
