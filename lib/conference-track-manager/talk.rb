@@ -1,9 +1,17 @@
+require 'securerandom'
+
 module ConferenceTrackManager
   module Model
     class Talk
-      attr_reader :title, :duration, :schedule
+      attr_reader :title, :duration
+      attr_accessor :schedule
 
-      def initialize(title, duration)
+      def initialize(line)
+        line_splited = line.split
+        duration = line_splited.last.strip == "lightning" ? 5 : line.split.last.to_i
+        line_splited.pop
+        title = line_splited.join(" ").strip
+        title = SecureRandom.uuid.gsub("-", "").hex if title.length == 0
         @title = title
         @duration = duration
       end
@@ -20,6 +28,10 @@ module ConferenceTrackManager
       def ==(other)
         @title == other.title &&
         @duration == other.duration
+      end
+
+      def to_s
+        "<Talk @schedule=#{@schedule}, @title=#{@title}, @duration=#{@duration}>"
       end
     end
   end
