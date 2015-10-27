@@ -10,8 +10,8 @@ class SessionManagerTest < Minitest::Test
   include ConferenceTrackManager
 
   def test_fill_a_session_with_complete_time
-      talks = Input::InputTalkReader.new.read('../input.txt')
-      #talks = TestHelper.talk_generator(20)
+      # talks = Input::InputTalkReader.new.read('../input.txt')
+      talks = TestHelper.talk_generator(200)
 
       track_manager = Process::TrackManager.new(talks)
       track_manager.proccess

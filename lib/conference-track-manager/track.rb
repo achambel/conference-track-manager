@@ -1,8 +1,7 @@
 module ConferenceTrackManager
   module Model
     class Track
-      attr_reader :total_duration, :lunch, :afternoon_begin
-      attr_accessor :talks
+      attr_reader :total_duration, :talks, :lunch, :afternoon_begin
 
       MORNING_SESSION_BEGIN = 9
       MORNING_SESSION_END = 12
@@ -13,7 +12,10 @@ module ConferenceTrackManager
       def initialize
         @total_duration = ((AFTERNOON_SESSION_END - AFTERNOON_SESSION_BEGIN) +
                           (MORNING_SESSION_END - MORNING_SESSION_BEGIN)) * 60
-        @talks = []
+      end
+
+      def talks=(talks)
+        @talks = [] unless talks
       end
 
       def session_time(hour)

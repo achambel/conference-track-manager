@@ -8,9 +8,9 @@ module ConferenceTrackManager
 
       def initialize(line)
         line_splited = line.split
-        duration = line_splited.last.strip == "lightning" ? 5 : line.split.last.to_i
+        duration = line_splited.last == "lightning" ? 5 : line.split.last.to_i
         line_splited.pop
-        title = line_splited.join(" ").strip
+        title = line_splited.join(" ")
         title = SecureRandom.uuid.gsub("-", "").hex if title.length == 0
         @title = title
         @duration = duration
